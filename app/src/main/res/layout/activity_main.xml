@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ahorro.specalpha.caja_ahorro.MainActivity">
+    tools:context="com.ahorro.specalpha.caja_ahorro.Activities.MainActivity">
 
     <TextView
         android:id="@+id/cantidad_disponible"
