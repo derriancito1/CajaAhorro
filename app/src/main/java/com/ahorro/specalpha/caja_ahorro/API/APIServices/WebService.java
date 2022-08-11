@@ -2,7 +2,7 @@ package com.ahorro.specalpha.caja_ahorro.API.APIServices;
 
 import com.ahorro.specalpha.caja_ahorro.Models.Ahorro;
 import com.ahorro.specalpha.caja_ahorro.Models.MiAhorro;
-import com.ahorro.specalpha.caja_ahorro.Models.MisPrestamos;
+import com.ahorro.specalpha.caja_ahorro.Models.Prestamo;
 import com.ahorro.specalpha.caja_ahorro.Models.User;
 
 import retrofit2.Call;
@@ -25,6 +25,6 @@ public interface WebService {
     Call<MiAhorro> getMiAhorro(@Query("miahorro") String miahorro, @Query("username") String username);
 
     @GET("caja_ahorro")
-    Call<MisPrestamos> getMisPrestamos(@Query("misprestamos") String misprestamos, @Query("username") String username);
+    Call<Prestamo> getMisPrestamos(@Query("misprestamos") String misprestamos, @Query("username") String username);
 
 }

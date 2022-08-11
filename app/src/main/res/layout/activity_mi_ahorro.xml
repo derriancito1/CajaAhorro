@@ -85,7 +85,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="16dp"
                     android:layout_marginRight="16dp"
-                    android:text="Valor de acciones"
+                    android:text="Rendimiento por accion"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/editTextAcciones" />
@@ -111,15 +111,15 @@
                     android:id="@+id/textViewMiDinero"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
                     android:text="Cantidad actual"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextValorAccion" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextGananciaTotal" />
 
                 <EditText
                     android:id="@+id/editTextMiDinero"
@@ -134,7 +134,6 @@
                     android:gravity="center_horizontal"
                     android:inputType="textPersonName"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.503"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textViewMiDinero" />
 
@@ -147,10 +146,10 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="16dp"
                     android:layout_marginRight="16dp"
-                    android:text="Ganancia Total"
+                    android:text="Rendimiento Total"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextMiDinero" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextValorAccion" />
 
                 <EditText
                     android:id="@+id/editTextGananciaTotal"
