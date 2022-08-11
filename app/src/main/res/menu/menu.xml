@@ -10,10 +10,10 @@
         android:id="@+id/mi_ahorro"
         android:title="Mi Ahorro"
         app:showAsAction="never"/>
-<!--    <item
+    <item
         android:id="@+id/mis_prestamos"
         android:title="Mis Prestamos"
-        app:showAsAction="never"/>-->
+        app:showAsAction="never"/>
 
     <item
         android:id="@+id/cerrar"
