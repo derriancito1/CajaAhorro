@@ -72,11 +72,11 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
                     android:text="Cantidad actual"
+                    android:textAlignment="center"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    android:textAlignment="center"
-                    app:layout_constraintTop_toBottomOf="@+id/textViewMiDinero" />
+                    app:layout_constraintTop_toBottomOf="@+id/textViewGananciaTotal" />
 
                 <TextView
                     android:id="@+id/textViewGananciaTotal2"
@@ -147,8 +147,9 @@
                     android:layout_marginRight="8dp"
                     android:textAlignment="center"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textViewGananciaTotal2" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView10000" />
 
                 <TextView
                     android:id="@+id/textViewGananciaTotal"
@@ -161,8 +162,9 @@
                     android:layout_marginRight="8dp"
                     android:textAlignment="center"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView10000" />
+                    app:layout_constraintTop_toBottomOf="@+id/textViewGananciaTotal2" />
 
             </android.support.constraint.ConstraintLayout>
     </ScrollView>
