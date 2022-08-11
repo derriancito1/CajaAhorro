@@ -22,7 +22,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activities.MiAhorroActivity" />
-        <activity android:name=".Activities.MisPrestamosActivity"></activity>
+        <activity android:name=".Activities.MisPrestamosActivity" />
+        <activity android:name=".Activities.PrestamoActivity"></activity>
     </application>
 
 </manifest>

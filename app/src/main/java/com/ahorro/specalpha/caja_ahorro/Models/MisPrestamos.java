@@ -4,6 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class MisPrestamos {
 
+    private String id;
     private String nombre;
     private String prestamo;
     @SerializedName("fecha_prestamo")
@@ -21,7 +22,7 @@ public class MisPrestamos {
     public MisPrestamos() {
     }
 
-    public MisPrestamos(String nombre, String prestamo, String fechaPrestamo, String fechaPago, String cantidadPagada, String meses, String dias, String intereses, String interesDeuda) {
+    public MisPrestamos(String id,String nombre, String prestamo, String fechaPrestamo, String fechaPago, String cantidadPagada, String meses, String dias, String intereses, String interesDeuda) {
         this.nombre = nombre;
         this.prestamo = prestamo;
         this.fechaPrestamo = fechaPrestamo;
@@ -31,6 +32,7 @@ public class MisPrestamos {
         this.dias = dias;
         this.intereses = intereses;
         this.interesDeuda = interesDeuda;
+        this.id = id;
     }
 
     public String getNombre() {
@@ -103,5 +105,13 @@ public class MisPrestamos {
 
     public void setInteresDeuda(String interesDeuda) {
         this.interesDeuda = interesDeuda;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }
