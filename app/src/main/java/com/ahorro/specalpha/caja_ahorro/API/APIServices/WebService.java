@@ -1,7 +1,8 @@
 package com.ahorro.specalpha.caja_ahorro.API.APIServices;
 
 import com.ahorro.specalpha.caja_ahorro.Models.Ahorro;
-import com.ahorro.specalpha.caja_ahorro.Models.City;
+import com.ahorro.specalpha.caja_ahorro.Models.MiAhorro;
+import com.ahorro.specalpha.caja_ahorro.Models.User;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -14,10 +15,16 @@ import retrofit2.http.Query;
 public interface WebService {
 
     @GET("weather")
-    Call<City> getCity(@Query("q") String city, @Query("appid") String key);
+    Call<User> getCity(@Query("q") String city, @Query("appid") String key);
 
 
     @GET("caja_ahorro")
     Call<Ahorro> getAhorro(@Query("id") String id);
+
+    @GET("caja_ahorro")
+    Call<User> getUser(@Query("username") String username, @Query("password") String password);
+
+    @GET("caja_ahorro")
+    Call<MiAhorro> getMiAhorro(@Query("miahorro") String miahorro, @Query("username") String username);
 
 }
