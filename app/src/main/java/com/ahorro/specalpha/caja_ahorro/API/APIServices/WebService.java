@@ -2,6 +2,7 @@ package com.ahorro.specalpha.caja_ahorro.API.APIServices;
 
 import com.ahorro.specalpha.caja_ahorro.Models.Ahorro;
 import com.ahorro.specalpha.caja_ahorro.Models.MiAhorro;
+import com.ahorro.specalpha.caja_ahorro.Models.MisPrestamos;
 import com.ahorro.specalpha.caja_ahorro.Models.Prestamo;
 import com.ahorro.specalpha.caja_ahorro.Models.User;
 
@@ -26,5 +27,9 @@ public interface WebService {
 
     @GET("caja_ahorro")
     Call<Prestamo> getMisPrestamos(@Query("misprestamos") String misprestamos, @Query("username") String username);
+
+    @GET("caja_ahorro")
+    Call<MisPrestamos> getPrestamo(@Query("prestamo") String prestamo, @Query("username") String username, @Query("ids") String ids);
+
 
 }

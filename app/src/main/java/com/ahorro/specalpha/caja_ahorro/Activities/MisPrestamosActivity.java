@@ -1,12 +1,10 @@
 package com.ahorro.specalpha.caja_ahorro.Activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -14,10 +12,9 @@ import com.ahorro.specalpha.caja_ahorro.API.API;
 import com.ahorro.specalpha.caja_ahorro.API.APIServices.WebService;
 import com.ahorro.specalpha.caja_ahorro.Models.MisPrestamos;
 import com.ahorro.specalpha.caja_ahorro.Models.Prestamo;
-import com.ahorro.specalpha.caja_ahorro.MyAdapter;
+import com.ahorro.specalpha.caja_ahorro.Adapters.MyAdapter;
 import com.ahorro.specalpha.caja_ahorro.R;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -61,7 +58,8 @@ public class MisPrestamosActivity extends AppCompatActivity {
                     listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                         @Override
                         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                            /*Toast.makeText(MisPrestamosActivity.this, "position "+misPrestamos.getMeses(list.get(i)), Toast.LENGTH_LONG).show();*/
+                            /*Toast.makeText(MisPrestamosActivity.this, "Id "+list.get(i).getId(), Toast.LENGTH_LONG).show();*/
+                            goPrestamo(list.get(i).getId());
                         }
                     });
 
@@ -77,5 +75,14 @@ public class MisPrestamosActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void goPrestamo(String id){
+        Intent intent = new Intent(this, PrestamoActivity.class);
+        intent.putExtra("nombreBD", getIntent().getStringExtra("nombreBD"));
+        intent.putExtra("usernameBD", getIntent().getStringExtra("usernameBD"));
+        intent.putExtra("id", id);
+        startActivity(intent);
+    }
+
 
 }

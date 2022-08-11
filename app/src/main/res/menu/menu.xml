@@ -9,7 +9,7 @@
     <item
         android:id="@+id/mi_ahorro"
         android:title="Mi Ahorro"
-        app:showAsAction="never"/>
+        app:showAsAction="always"/>
     <item
         android:id="@+id/mis_prestamos"
         android:title="Mis Prestamos"
@@ -18,7 +18,7 @@
     <item
         android:id="@+id/cerrar"
         android:title="Salir"
-        app:showAsAction="always"/>
+        app:showAsAction="never"/>
 
  <!--   <item
         android:id="@+id/cerrar_borrar"
