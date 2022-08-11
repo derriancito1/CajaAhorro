@@ -3,6 +3,7 @@ package com.ahorro.specalpha.caja_ahorro.Activities;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ahorro.specalpha.caja_ahorro.API.API;
@@ -16,7 +17,7 @@ import retrofit2.Response;
 
 public class MiAhorroActivity extends AppCompatActivity {
 
-    private EditText editTextAhorro, editTextAcciones, editTextValorAccion, editTextMiDinero,editTextGananciaTotal;
+    private TextView textViewAhorro, textViewAcciones, textViewValorAccion, textViewMiDinero,textViewGananciaTotal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,15 +27,17 @@ public class MiAhorroActivity extends AppCompatActivity {
 
         webService();
 
+        this.setTitle("Mi Ahorro");
+
 
     }
 
     private void bindUI() {
-        editTextAhorro = (EditText) findViewById(R.id.editTextAhorro);
-        editTextAcciones = (EditText) findViewById(R.id.editTextAcciones);
-        editTextValorAccion = (EditText) findViewById(R.id.editTextValorAccion);
-        editTextMiDinero = (EditText) findViewById(R.id.editTextMiDinero);
-        editTextGananciaTotal = (EditText) findViewById(R.id.editTextGananciaTotal);
+        textViewAhorro = (TextView) findViewById(R.id.textViewAhorro);
+        textViewAcciones = (TextView) findViewById(R.id.textViewAcciones);
+        textViewValorAccion = (TextView) findViewById(R.id.textViewValorAccion);
+        textViewMiDinero = (TextView) findViewById(R.id.textViewMiDinero);
+        textViewGananciaTotal = (TextView) findViewById(R.id.textViewGananciaTotal);
     }
 
 
@@ -46,11 +49,11 @@ public class MiAhorroActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<MiAhorro> call, Response<MiAhorro> response) {
                 response.body();
-                editTextAhorro.setText("$"+response.body().getAhorro());
-                editTextAcciones.setText(response.body().getAcciones());
-                editTextValorAccion.setText("$"+response.body().getValorAccion());
-                editTextMiDinero.setText("$"+response.body().getMiDinero());
-                editTextGananciaTotal.setText("$"+response.body().getGananciaTotal());
+                textViewAhorro.setText("$"+response.body().getAhorro());
+                textViewAcciones.setText(response.body().getAcciones());
+                textViewValorAccion.setText("$"+response.body().getValorAccion());
+                textViewMiDinero.setText("$"+response.body().getMiDinero());
+                textViewGananciaTotal.setText("$"+response.body().getGananciaTotal());
             }
 
             @Override

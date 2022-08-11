@@ -59,7 +59,7 @@ public class MyAdapter extends BaseAdapter {
         final MisPrestamos currentName = (MisPrestamos) getItem(i);
         holder.nameTextView.setText("Prestamo $"+currentName.getPrestamo());
         holder.fechaPrestamo.setText(currentName.getFechaPrestamo());
-        holder.intereses.setText("Intereses "+currentName.getIntereses());
+        holder.intereses.setText("Intereses "+currentName.getInteresDeuda());
 
         return converView;
 

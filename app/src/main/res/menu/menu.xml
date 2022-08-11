@@ -7,6 +7,10 @@
         android:title="Intereses"
         app:showAsAction="never"/>-->
     <item
+        android:id="@+id/miCuenta"
+        android:title="Mi Cuenta"
+        app:showAsAction="never"/>
+    <item
         android:id="@+id/mi_ahorro"
         android:title="Mi Ahorro"
         app:showAsAction="always"/>
@@ -20,8 +24,5 @@
         android:title="Salir"
         app:showAsAction="never"/>
 
- <!--   <item
-        android:id="@+id/cerrar_borrar"
-        android:title="Salir"
-        app:showAsAction="always"/>-->
+
 </menu>
