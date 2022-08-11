@@ -4,9 +4,9 @@ import com.google.gson.annotations.SerializedName;
 
 public class MisPrestamos {
 
-//    private String nombre;
+    private String nombre;
     private String prestamo;
-    /*@SerializedName("fecha_prestamo")
+    @SerializedName("fecha_prestamo")
     private String fechaPrestamo;
     @SerializedName("fecha_pago")
     private String fechaPago;
@@ -16,30 +16,30 @@ public class MisPrestamos {
     private String dias;
     private String intereses;
     @SerializedName("interes_deuda")
-    private String interesDeuda;*/
+    private String interesDeuda;
 
     public MisPrestamos() {
     }
 
-    public MisPrestamos(/*String nombre,*/ String prestamo/*, String fechaPrestamo, String fechaPago, String cantidadPagada, String meses, String dias, String intereses, String interesDeuda*/) {
-       /* this.nombre = nombre;*/
+    public MisPrestamos(String nombre, String prestamo, String fechaPrestamo, String fechaPago, String cantidadPagada, String meses, String dias, String intereses, String interesDeuda) {
+        this.nombre = nombre;
         this.prestamo = prestamo;
-        /*this.fechaPrestamo = fechaPrestamo;
+        this.fechaPrestamo = fechaPrestamo;
         this.fechaPago = fechaPago;
         this.cantidadPagada = cantidadPagada;
         this.meses = meses;
         this.dias = dias;
         this.intereses = intereses;
-        this.interesDeuda = interesDeuda;*/
+        this.interesDeuda = interesDeuda;
     }
 
-    /*public String getNombre() {
+    public String getNombre() {
         return nombre;
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }*/
+    }
 
     public String getPrestamo() {
         return prestamo;
@@ -49,7 +49,7 @@ public class MisPrestamos {
         this.prestamo = prestamo;
     }
 
-   /* public String getFechaPrestamo() {
+    public String getFechaPrestamo() {
         return fechaPrestamo;
     }
 
@@ -103,5 +103,5 @@ public class MisPrestamos {
 
     public void setInteresDeuda(String interesDeuda) {
         this.interesDeuda = interesDeuda;
-    }*/
+    }
 }
