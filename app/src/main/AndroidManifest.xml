@@ -23,7 +23,8 @@
         </activity>
         <activity android:name=".Activities.MiAhorroActivity" />
         <activity android:name=".Activities.MisPrestamosActivity" />
-        <activity android:name=".Activities.PrestamoActivity"></activity>
+        <activity android:name=".Activities.PrestamoActivity" />
+        <activity android:name=".Activities.MiCuentaActivity"></activity>
     </application>
 
 </manifest>

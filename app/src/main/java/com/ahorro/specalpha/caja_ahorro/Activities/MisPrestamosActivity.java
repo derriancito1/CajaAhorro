@@ -33,6 +33,8 @@ public class MisPrestamosActivity extends AppCompatActivity {
         bindUI();
         webService();
 
+        this.setTitle("Mis Prestamos");
+
 
     }
 

@@ -25,6 +25,8 @@ public class PrestamoActivity extends AppCompatActivity {
         bindUI();
         webService();
 
+        this.setTitle("Prestamo");
+
     }
 
     private void bindUI() {
