@@ -6,8 +6,8 @@ android {
         applicationId "com.ahorro.specalpha.caja_ahorro"
         minSdkVersion 15
         targetSdkVersion 26
-        versionCode 7
-        versionName "2.0.3"
+        versionCode 8
+        versionName "2.0.4"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

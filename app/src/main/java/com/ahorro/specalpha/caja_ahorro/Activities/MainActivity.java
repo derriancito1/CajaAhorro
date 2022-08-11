@@ -79,9 +79,10 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Mi Ahorro", Toast.LENGTH_LONG).show();
                 goMiAhorro();
                 return true;
-            /*case R.id.mis_prestamos:
+            case R.id.mis_prestamos:
                 Toast.makeText(this, "Mis prestamos", Toast.LENGTH_LONG).show();
-                return true;*/
+                goMisPrestamos();
+                return true;
             case R.id.cerrar:
                 logOut();
                 return true;
@@ -108,7 +109,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void goMiAhorro(){
         Intent intent = new Intent(this, MiAhorroActivity.class);
-        //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        intent.putExtra("nombreBD", getIntent().getStringExtra("nombreBD"));
+        intent.putExtra("usernameBD", getIntent().getStringExtra("usernameBD"));
+        startActivity(intent);
+    }
+
+    public void goMisPrestamos(){
+        Intent intent = new Intent(this, MisPrestamosActivity.class);
         intent.putExtra("nombreBD", getIntent().getStringExtra("nombreBD"));
         intent.putExtra("usernameBD", getIntent().getStringExtra("usernameBD"));
         startActivity(intent);
