@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item
+<!--    <item
         android:id="@+id/intereses"
-        android:title="Intereses" />
+        android:title="Intereses"
+        app:showAsAction="never"/>-->
     <item
         android:id="@+id/mi_ahorro"
-        android:title="Mi Ahorro" />
-    <item
+        android:title="Mi Ahorro"
+        app:showAsAction="never"/>
+<!--    <item
         android:id="@+id/mis_prestamos"
-        android:title="Mis Prestamos" />
+        android:title="Mis Prestamos"
+        app:showAsAction="never"/>-->
+
+    <item
+        android:id="@+id/cerrar"
+        android:title="Salir"
+        app:showAsAction="always"/>
+
+ <!--   <item
+        android:id="@+id/cerrar_borrar"
+        android:title="Salir"
+        app:showAsAction="always"/>-->
 </menu>
